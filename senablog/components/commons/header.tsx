@@ -27,11 +27,11 @@ const HeaderCommon = () => {
       </div>
       <div className="flex  items-center justify-between">
         {isSignedIn ? (
-          <Button className="mr-2">Đăng xuất</Button>
+          <Button className="mr-2">Log out</Button>
         ) : (
           <>
-            <Button className="mr-2">Đăng nhập</Button>
-            <Button variant="outline">Đăng kí</Button>
+            <Button className="mr-2">Log in</Button>
+            <Button variant="outline">Sign up</Button>
           </>
         )}
       </div>
