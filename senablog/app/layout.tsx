@@ -16,14 +16,6 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      {/* <html lang="en" suppressHydrationWarning>
-      <CrispProvider />
-      <body className={font.className}>
-        <ToasterProvider />
-        <ModalProvider />
-        {children}
-      </body>
-    </html> */}
       <html lang="en" suppressHydrationWarning>
         <body className={inter.className}>{children}</body>
       </html>
