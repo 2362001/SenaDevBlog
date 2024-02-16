@@ -27,14 +27,21 @@ const HeaderCommon = () => {
       <div className="flex  items-center justify-between">
         {isSignedIn ? (
           <>
-            <Button className="mr-2">Create Post</Button>
-            <Image
-              width={25}
-              height={25}
-              className="mr-2 cursor-pointer"
-              alt="#"
-              src={bellicon}
-            />
+            <Link href="/newpost">
+              <Button className="mr-2">Create Post</Button>
+            </Link>
+            <Link href="/notifications">
+              <div>
+                <Image
+                  width={25}
+                  height={25}
+                  className="mr-2 cursor-pointer"
+                  alt="#"
+                  src={bellicon}
+                />
+              </div>
+            </Link>
+
             <div className="w-8 h-8 rounded-full bg-blue-500 cursor-pointer"></div>
             {/* <Button className="mr-2">Log out</Button> */}
           </>
